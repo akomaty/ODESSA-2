@@ -1,0 +1,156 @@
+%
+% SECTION
+\section{Bob}
+
+\begin{frame}
+  \frametitle{What is Bob?}
+
+  \begin{center}
+    \includegraphics[width=0.7\linewidth]{graphics/bob}
+  \end{center}
+
+  \vspace{2em}
+
+  Put simply, Bob is \textbf{all} that you have seen, wrapping a number of
+  Signal Processing, Pattern Recognition \& Machine Learning tools into an easy
+  to use software environment.
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Packages in the Wild}
+
+  Bob is a disjoint set of
+  packages\footnote{\url{https://github.com/idiap/bob/wiki/Packages}} built
+  using a common, uniform, \texttt{bob.extension} support.
+
+  \vspace{2em}
+
+  Packages are all available in PyPI for easy download and installation:
+  \url{https://pypi.python.org/pypi?:action=browse&show=all&c=590}
+
+%  \vspace{2em}
+
+%  \begin{exampleblock}{Tip}
+%    Your virtual images \textbf{already} contain most Bob packages
+%    pre-installed.
+%  \end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Installation}
+
+  We have installation procedures for a number of
+  OSes\footnote{https://github.com/idiap/bob/wiki/Installation}:
+
+  \vspace{2em}
+
+  \begin{itemize}
+    \item Linux\footnote{Should work on most Linux-based distros}: Ubuntu,
+      Debian
+    \item Mac OSX
+  \end{itemize}
+
+  \vspace{2em}
+
+  \begin{block}{No MS Windows (yet)}
+    Working on a Windows port since sometime - contributions are welcome.
+  \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{What is there?}
+
+  Each package contains a specific set of utilities. You use them as you like:
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Input/Output: Extensible support HDF5, Images, Videos, Audio, Matlab
+    \item Audio/Signal processing: MFCC, FFT, DCT
+    \item Image processing: Local Binary Patterns (LBPs), Gabor Jets, SIFT,
+      HOG, GLCM, TanTriggs, etc
+    \item Machine Learning: Linear models, Neural Nets, SVMs, GMMs, Boosting,
+      Bayesian intra/extra (personal) classifier, Inter-Session Variability
+      modeling (ISV), Joint Factor Analysis (JFA), Probabilistic Linear
+      Discriminant Analysis (PLDA), I-Vectors, etc.
+    \item Database interfaces: Toy databases, M-NIST character recognition,
+      Various Biometric databases (face, speaker, anti-spoofing, vein)
+    \item Metrics: F1-Score, DET, ROC, ROC-Convex Hull, EPC, CMC, EER and WER
+    minimization, etc.
+  \end{itemize}
+
+  \vspace{1em}
+
+  The full list is here: \url{https://github.com/idiap/bob/wiki/Packages}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Bob: Figures}
+
+  Statistics:
+
+  \vspace{2em}
+
+  \begin{itemize}
+    \item \textbf{$\sim$5'000 updates} on repository
+    \item \textbf{$>$22'000} new front page \textbf{visits} since April
+      2012
+    \item \textbf{$>$50 satellite packages} (tutorials and published
+      papers)
+    \item $>$30 database APIs for different purposes (more coming)
+  \end{itemize}
+
+\end{frame}
+
+
+
+\frame{
+
+  \frametitle{Bob uses Python}
+
+  Why Python?
+
+  \vspace{2em}
+
+  \begin{itemize}
+    \item full programming language (classes, exceptions, lambda functions,
+      complex types)
+    \item extensible via C, C++: bottlenecks
+    \item modular
+    \item free (open-source and costs \$0)
+    \item cross-platform
+    \item widely used
+    \item well documented
+    \item well supported
+  \end{itemize}
+
+}
+
+
+\frame{
+
+  \frametitle{Python Packaging}
+
+  All packages are distributed using a standard Python distribution mechanism:
+
+  \vspace{2em}
+
+  \begin{itemize}
+    \item A way to host ready-to-use releases for free (cost is \$0): PyPI
+      (Python Package Index)
+    \item A way to track dependencies auto\textit{magically}: Just get me my
+      environment working
+    \item A way to separate stable releases from the development process
+    \item A way to transparently issue bug fixes
+  \end{itemize}
+
+}
+

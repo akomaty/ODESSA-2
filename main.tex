@@ -1,0 +1,84 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+%\usetheme{Pittsburgh}
+\beamertemplatenavigationsymbolsempty
+%\setbeamertemplate{footline}[frame number]
+%\setbeamertemplate{footline}{\hspace*{.5cm}\tiny{\insertshorttitle \hspace*{50pt} \hfill\insertframenumber/\inserttotalframenumber\hspace*{.5cm}} \vspace{2pt}}
+\setbeamertemplate{footline}{\hspace*{.5cm}\tiny{\, \hspace*{50pt} \hfill\insertframenumber/\inserttotalframenumber\hspace*{.5cm}} \vspace{2pt}}
+
+\mode<handout>{
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper,border shrink=4mm]
+%% \pgfpagesuselayout{4 on 1}[a4paper,landscape,border shrink=2mm]
+}
+
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{movie15}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+%\newcommand{\myurl}[1]{\href{http://#1}{#1}}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=red,citecolor=green,filecolor=magenta,urlcolor=blue}
+
+\definecolor{blue}{rgb}{0.0,0.0,0.55}
+\definecolor{darkblue}{rgb}{0.10,0.10,0.70}
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\definecolor{darkred}{rgb}{0.75,0.0,0.0}
+
+\definecolor{green}{rgb}{0.0,0.80,0.0}
+\definecolor{darkgreen}{rgb}{0.0,0.5,0.0}
+
+\definecolor{dimmed}{rgb}{0.8,0.8,0.8}
+\mode<beamer>{
+\setbeamercolor{math text}{fg=darkblue}
+\setbeamercolor{local structure}{fg=black}
+}
+
+\mode<handout>{
+\setbeamercolor{math text}{fg=black}
+%% \setbeamercolor{structure}{fg=black}
+\setbeamercolor{local structure}{fg=black}
+}
+
+\input{graphics}
+
+% default, triangle, circle, square et ball
+%\setbeamertemplate{itemize item}[triangle]
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{enumerate item}[square]
+\setbeamertemplate{enumerate subitem}[circle]
+
+\begin{document}
+% TITLE
+\title[AMI and Bob]{AMI database and Introduction to Bob} 
+%\subtitle{Biometric recognition} 
+% AUTHOR
+\input{author}
+% INSTITUTE
+\input{institute}
+% DATE
+\date{\today} 
+% TITLE PAGE
+\frame{\titlepage} % fancy title page
+
+%\frame{\frametitle{Outline}\tableofcontents}
+\input{ami}
+\input{MyCV}
+\input{rr}
+\input{bob}
+
+
+
+\end{document}
+
+
+
+
+

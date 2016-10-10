@@ -1,0 +1,274 @@
+\begin{frame}
+
+  \frametitle{Reproducible Research: A Motivation}
+
+  \begin{center}
+    \pgfimage[width=0.48\textwidth]{graphics/equations}%
+    \hspace{1em}%
+    \pgfimage[width=0.48\textwidth]{graphics/plots}%
+    \vspace{1em}
+  \end{center}
+
+\end{frame}
+
+
+\begin{frame}
+
+  \frametitle{You Ask the Author for Clues...}
+
+  You get:
+
+  \only<2->{
+    \vspace{1em}
+
+    \begin{center}
+      \includegraphics[height=0.6\textheight]{graphics/short-question-mark}
+    \end{center}
+  }
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Let's interact...}
+
+  \only<1>{
+    \begin{center}
+    \pgfimage[width=0.40\textwidth]{graphics/miracle}%
+      \end{center}
+    \hspace{1em}
+
+    \textit{How many times?}
+  }%
+  \only<2>{
+    \begin{center}
+    \pgfimage[width=0.40\textwidth]{graphics/miracle}%
+      \end{center}
+    \hspace{1em}
+
+    \textit{Crossed a publication and openly decided to \textbf{ignore it
+      because it would be too hard to apply} those doubtful results on your
+        research?}
+  }%
+  \only<3>{
+    \textit{Worked day and night to \textbf{incorporate some results} on your
+      own work but:}
+
+    \begin{itemize}
+
+    \item There were \textbf{untold parameters} that needed adjustment
+      and you couldn't get hold of them?
+
+      \item Realized the proposed algorithm \textbf{worked only on the
+        specific data} shown at the original paper?
+
+        \item Realized that something did \textbf{not quite add up} in the
+        end?
+
+        \end{itemize}
+  }%
+  \only<4>{
+    \begin{center}
+    \pgfimage[width=0.6\textwidth]{graphics/phd010708s}%
+      \end{center}
+    \vspace{2em}
+
+    \textit{Had \textbf{to take over} the work from another colleague that left
+    and had to start from scratch - months into programming to make things work
+    again?}
+  }%
+  \only<5>{
+    \begin{center}
+    \pgfimage[width=0.6\textwidth]{graphics/phd010708s}%
+      \end{center}
+    \vspace{2em}
+
+    \textit{Would have liked to \textbf{replay to someone about your work},
+      but you couldn't really remember all details when you first made it
+        work? Or you \textbf{could not make it work} at all?}
+  }
+
+\end{frame}
+
+
+\frame{
+
+  \begin{quotation}
+    An article about computational science in a scientific publication is
+    \textbf{not the scholarship} itself, it is merely \textbf{advertising} of
+    the scholarship. The actual scholarship is the complete software
+    development environment and the complete set of instructions which
+    generated the figures.
+  \end{quotation}
+
+  \begin{flushright}
+    \textit{D. Donoho, 2010\footnotemark}
+  \end{flushright}
+
+  \footnotetext[1]{\url{http://biostatistics.oxfordjournals.org/content/11/3/385.long}}
+}
+
+
+\frame{
+
+  \frametitle{Enter ``Reproducible Research" (RR)\footnotemark}
+
+  One term that aggregates work comprising of:
+
+    \begin{itemize}
+  \item a \textbf{paper}, that describe your work in all relevant details
+    \item \textbf{code} to reproduce all results
+    \item \textbf{data} required to reproduce the results
+    \item \textbf{instructions}, on how to apply the \textit{code} on the
+    \textit{data} to replicate the results on the \textit{paper}.
+    \end{itemize}
+
+    \footnotetext[2]{\url{http://reproducibleresearch.net}}
+
+}
+
+\frame{
+
+  \frametitle{Levels of Reproducibility\footnotemark}
+
+  With respect to an independent researcher (reader):
+
+  \begin{enumerate}
+      \setcounter{enumi}{-1}
+    \item Irreproducible
+    \item Cannot seem to reproduce
+    \item Reproducible, with extreme effort ($>$ 1 month)
+    \item Reproducible, with considerable effort ($>$ 1 week)
+    \item Easily reproducible ($\sim$ 15 min.), but requires proprietary
+      software (e.g. Matlab)
+    \item \textbf{Easily reproducible ($\sim$ 15 min.), only free software}
+    \only<2->{
+    \item \textcolor{blue}{\textbf{Easily reproducible ($\sim$ 1 min.), using
+          only a web browser}}
+    }
+  \end{enumerate}
+
+  \footnotetext[4]{\textit{Reproducible Research in Signal Processing: What,
+    why and how}, Vandewalle, Kovacevic and Vetterli, 2012}
+}
+
+
+%\frame{
+
+%  \frametitle{Pipeline}
+
+%  \begin{center}
+%    \pgfimage[interpolate=true,width=0.9\textwidth]{graphics/rr-pipeline}
+%  \end{center}
+
+%}
+
+
+%\frame{
+
+%  \frametitle{Why?}
+
+%  \textit{Finally, writing and distributing code and data takes time...}
+
+%  \begin{center}
+%    \pgfimage[interpolate=true,width=0.5\textwidth]{graphics/rr-in-practice}
+%  \end{center}
+
+%}
+
+\frame{
+  \frametitle{Why?}
+
+  Boost your research \textbf{impact (visibility)}:
+
+    \begin{itemize}
+
+  \item \textbf{Lower entrance barrier} to your publications
+
+    \item The current number of RR papers is \textbf{rather small} - you
+    have a clear chance to stand out today:
+
+    \begin{itemize}
+  \item Only \textbf{10\% of TIP} papers provide source
+    code\footnotemark.
+    \end{itemize}
+
+  \item Statistically, your work is \textbf{more valuable} if it is RR:
+
+    \begin{itemize}
+
+  \item \textbf{13 out of the top 15 most cited} articles in TPAMI or
+    TIP provide (at least) source code
+
+    \item The average number of citations for papers that provide
+    source-code in TIP is \textbf{7 fold} that of papers that don't.
+
+    \end{itemize}
+  \end{itemize}
+
+  \footnotetext[5]{\textit{Code Sharing is Associated with Research Impact in
+    Image Processing}, Patrick Vandewalle, 2012}
+}
+
+
+
+\frame{
+  \frametitle{In practice}
+
+  \begin{center}
+  \textit{Organize yourself so you are \textbf{always} doing RR}
+  \end{center}
+
+  Work as a team to:
+
+    \begin{itemize}
+      \item Organize \textbf{basic tools} so that you have a library that is
+        documented and re-usable by all
+
+      \item Organize \textbf{the data} so it is easy to replay analysis
+        protocols by all
+
+      \item Write and distribute \textbf{applications} that use your basic
+        tools and data to \textbf{generate interesting results}.
+
+    \end{itemize}
+
+Benefits:
+
+  \begin{itemize}
+
+  \item Research is always kept reproducible
+
+    \item People help each other in case of problems
+
+    \item New colleagues can start (nearly) immediately to produce
+    high-quality results.
+
+    \end{itemize}
+}
+
+
+\frame{
+
+  \frametitle{At our group:}
+
+  We handle \textbf{Level 5} RR (free software, easy deployment) in 3 ways:
+
+    \begin{itemize}
+
+  \item Develop and maintain a basic set of tools that we all share:
+    database protocol APIs, signal (image, audio) processing, machine
+    learning - \textbf{Bob}
+
+  \item Provide most of our \textbf{databases publicly}, free of charge
+
+    \item Provide end-user \textbf{applications} wrapped in an \textbf{easy
+      to deploy} packaging system that users (potential citers) can download,
+    install and extend - \textbf{Bob packages}.
+
+      \end{itemize}
+
+}
+
+
+
